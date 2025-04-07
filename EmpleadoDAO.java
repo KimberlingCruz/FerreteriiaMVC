@@ -4,6 +4,8 @@
  */
 package DAO;
 
+
+
 import Modelo.Empleado;
 import Util.ConexionDB;
 import java.sql.Connection;
@@ -14,8 +16,8 @@ import java.util.Date;
  *
  * @author Edith Cruz
  */
-public class ProductoDAO {
-    public void crearEmpleado(Empleado empleado) throws SQLException {
+public class EmpleadoDAO {
+public void crearEmpleado(Empleado empleado) throws SQLException {
     String sql = """
         INSERT INTO Empleados (
             primer_nombre, 
@@ -57,5 +59,4 @@ public static void main(String[] args) {
         System.err.println("Error: " + e.getMessage());
     }
 }
-
 }
